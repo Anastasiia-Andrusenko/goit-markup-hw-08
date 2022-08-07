@@ -1,0 +1,24 @@
+
+.section-inverse {
+  background-color: $inverse-background-color;
+}
+
+.section__titel--inverse {
+  color: $main-color;
+}
+
+.map {
+  width: 1016px;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: $main-color;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.14),
+    1px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.map__link {
+  display: block;
+}

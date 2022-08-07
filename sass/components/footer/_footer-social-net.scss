@@ -1,0 +1,43 @@
+.social-networks {
+	margin-left: 70px;
+
+	&__list {
+		display: flex;
+		gap: 10px;
+		@extend %list;
+	}
+}
+
+.social-networks__label,
+.footer-form__titel {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+
+.social-networks__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	transition: background-color 250ms $cubic-bezier;
+
+	&:hover,
+  &:focus {
+	  background-color: $accent-color;
+  }
+}
+
+.social-networks__icon {
+	width: 20px;
+	height: 20px;
+	fill: $main-color;
+}

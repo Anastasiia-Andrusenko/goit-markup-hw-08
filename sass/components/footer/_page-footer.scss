@@ -1,0 +1,14 @@
+.footer {
+	background-color: $inverse-background-color;
+	color: $main-color;
+	padding: 60px 0;
+}
+
+.footer__point {
+	margin-bottom: 9px;
+}
+
+.footer--container {
+	display: flex;
+	align-items: baseline;
+}

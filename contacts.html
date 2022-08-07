@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebStudio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+    <!--Шапка проекта-->
+		<header class="header">
+			<div class="container header--container">
+				<!--Навигация на страницы-->
+				<nav>
+					<ul class="nav">
+						<li class="nav__item logo__link">
+							<a class="logo" lang="en" href="./index.html">
+								<span class="logo__accent">Web</span>Studio
+							</a>
+						</li>
+						<li class="nav__item nav__item--margin">
+              <a class="nav__link" href="./index.html">Студия</a>
+						</li>
+						<li class="nav__item nav__item--margin">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link current" href="./contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<!--Контакты-->
+				<ul class="contacts">
+					<li class="contacts__item">
+						<a class="contacts__link" href="mailto:info@devstudio.com ">
+							<svg class="contacts__icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-mail"></use>
+								</svg>info@devstudio.com
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a class="contacts__link" href="tel:+380961111111">
+							<svg class="contacts__icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-tel"></use>
+								</svg>+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+    <!--MAIN content-->
+    <section class="section section-inverse">
+      <div class="container">
+        <h2 class="section__titel section__titel--inverse">Как с нами связаться</h2>
+        <div class="map">
+          <iframe class="map__link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7792674064144!2d30.53619711617527!3d50.42658409696467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjYsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spl!4v1659523567067!5m2!1suk!2spl" 
+             width="1000" 
+             height="470" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+		<footer class="footer">
+			<div class="container footer--container">
+				<div>
+					<a class="logo logo--inverse" lang="en" href="./index.html">
+						<span class="logo__accent">Web</span>Studio
+					</a>
+					<address>
+						<ul class="footer__contacts">
+							<li class="footer__point">
+								<a class="footer__address" href="https://goo.gl/maps/pCHkrpS1LhPa6uce7"
+									>г. Киев, пр-т Леси Украинки, 26
+								</a>
+							</li>
+							<li class="footer__point">
+								<a class="footer__contact" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+							</li>
+							<li>
+								<a class="footer__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="social-networks">
+					<p class="social-networks__label">присоединяйтесь</p>
+					<ul class="social-networks__list">
+						<li>
+							<a class="social-networks__link" href="https://www.instagram.com/">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-networks__link" href="https://twitter.com/?lang=en">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-networks__link" href="https://www.facebook.com/">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-networks__link" href="https://www.linkedin.com/">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<form class="footer-form">
+					<p class="footer-form__titel">Подпишитесь на рассылку</p>
+					<div class="subscribe">
+						<input
+							class="footer-form__input"
+							type="email"
+							name="mail-for-distribution"
+							id="mail-for-distribution"
+							placeholder="E-mail "
+						/>
+						<button type="submit" class="main-button subscribe__btn"
+							>Подписаться
+							<svg class="icon-send" width="24" height="24">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</footer>
+		<script src="./js/modal.js"></script>
+	</body>
+</html>

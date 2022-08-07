@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebStudio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body class="body">
+		<!--Шапка проекта-->
+		<header class="header">
+			<div class="container header--container">
+				<!--Навигация на страницы-->
+				<nav>
+					<ul class="nav">
+						<li class="nav__item logo__link">
+							<a class="logo" lang="en" href="./index.html">
+								<span class="logo__accent">Web</span>Studio
+							</a>
+						</li>
+						<li class="nav__item nav__item--margin">
+							<a class="nav__link" href="./index.html">Студия</a>
+						</li>
+						<li class="nav__item nav__item--margin">
+							<a class="nav__link current" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="./contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<!--Контакты-->
+				<ul class="contacts">
+					<li class="contacts__item">
+						<a class="contacts__link" href="mailto:info@devstudio.com ">
+							<svg class="contacts__icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-mail"></use>
+								</svg>info@devstudio.com
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a class="contacts__link" href="tel:+380961111111">
+							<svg class="contacts__icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-tel"></use>
+								</svg>+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main content-->
+		<main class="portfolio-page">
+			<section class="section">
+				<div class="container">
+					<h1 class="hidden-title">Портфолио</h1>
+					<ul class="filters">
+						<li class="filters__item">
+							<button type="button" class="filters__button">Все</button>
+						</li>
+						<li class="filters__item">
+							<button type="button" class="filters__button">Веб-сайты</button>
+						</li>
+						<li class="filters__item">
+							<button type="button" class="filters__button">Приложения</button>
+						</li>
+						<li class="filters__item">
+							<button type="button" class="filters__button">Дизайн</button>
+						</li>
+						<li class="filters__item">
+							<button type="button" class="filters__button">Маркетинг</button>
+						</li>
+					</ul>
+					<ul class="portfolio-cards">
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-1.jpg"
+									alt="превью первой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel">Технокряк</h2>
+								<p class="portfolio-cards__project-type">Веб-сайт</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-2.jpg"
+									alt="превью второй работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel"
+									>Постер <span lang="en">New Orlean vs Golden Star</span></h2
+								>
+								<p class="portfolio-cards__project-type">Дизайн</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-3.jpg"
+									alt="превью третей работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel">Ресторан <span lang="en">Seafood</span></h2>
+								<p class="portfolio-cards__project-type">Приложение</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-4.jpg"
+									alt="превью четвёртой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel">Проект <span lang="en">Prime</span></h2>
+								<p class="portfolio-cards__project-type">Маркетинг</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-5.jpg"
+									alt="превью пятой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel">Проект <span lang="en">Boxes</span></h2>
+								<p class="portfolio-cards__project-type">Приложение</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-6.jpg"
+									alt="превью шестой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel" lang="en">Inspiration has no Borders</h2>
+								<p class="portfolio-cards__project-type">Веб-сайт</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-7.jpg"
+									alt="превью седьмой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel"
+									>Издание <span lang="en">Limited Edition</span></h2
+								>
+								<p class="portfolio-cards__project-type">Дизайн</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-8.jpg"
+									alt="превью восьмой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel">Проект LAB</h2>
+								<p class="portfolio-cards__project-type">Маркетинг</p>
+							</div>
+						</li>
+						<li class="portfolio-cards__item">
+							<div class="project-thumb">
+								<img
+									class="project-thumb__img"
+									src="./images/portfolio/work-exm-9.jpg"
+									alt="превью девятой работы"
+									width="370"
+									height="294"
+								/>
+								<div class="project-thumb__overlay">
+									<p class="project-thumb__text"
+										>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+										сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+										или частном лице.
+									</p>
+								</div>
+							</div>
+							<div class="portfolio-cards__project-label">
+								<h2 class="portfolio-cards__titel" lang="en">Growing Business</h2>
+								<p class="portfolio-cards__project-type">Приложение</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<!--Footer-->
+		<footer class="footer">
+			<div class="container footer--container">
+				<div>
+					<a class="logo logo--inverse" lang="en" href="./index.html">
+						<span class="logo__accent">Web</span>Studio</a
+					>
+					<address>
+						<ul class="footer__contacts list">
+							<li class="footer__point">
+								<a class="footer__address" href="https://goo.gl/maps/pCHkrpS1LhPa6uce7"
+									>г. Киев, пр-т Леси Украинки, 26</a
+								>
+							</li>
+							<li class="footer__point">
+								<a class="footer__contact" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+							</li>
+							<li>
+								<a class="footer__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="social-networks">
+					<p class="social-networks__label">присоединяйтесь</p>
+					<ul class="social-networks__list list">
+						<li>
+							<a class="social-networks__link" href="https://www.instagram.com/">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-networks__link" href="https://twitter.com/?lang=en">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-networks__link" href="https://www.facebook.com/">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="social-networks__link" href="https://www.linkedin.com/">
+								<svg class="social-networks__icon">
+									<use href="./images/icons.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<form class="footer-form">
+					<p class="footer-form__titel">Подпишитесь на рассылку</p>
+					<div class="subscribe">
+						<input
+							class="footer-form__input"
+							type="email"
+							name="mail-for-distribution"
+							id="mail-for-distribution"
+							placeholder="E-mail "
+						/>
+						<button type="submit" class="main-button subscribe__btn"
+							>Подписаться
+							<svg class="icon-send" width="24" height="24">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>
