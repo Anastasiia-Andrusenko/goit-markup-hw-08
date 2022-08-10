@@ -1,0 +1,43 @@
+.footer__contacts {
+	@extend %list;
+	margin-bottom: 60px;
+
+	@media screen and (min-width: $desktop) {
+		margin-bottom: 0;
+	}
+}
+
+.footer__address,
+.footer__contact {
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+}
+
+.footer__contact {
+	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms $cubic-bezier;
+
+	&:hover,
+  &:focus {
+	  color: $accent-color;
+  }
+}
+
+.footer-tablet__contacts {
+
+	@media screen and (min-width: $tablet) {
+    margin-left: 76px;
+		margin-right: 165px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-left: 0;
+	  margin-right: 0;
+		text-align: start;
+	}
+}
+

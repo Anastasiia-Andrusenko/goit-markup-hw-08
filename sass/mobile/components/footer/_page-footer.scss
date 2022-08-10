@@ -1,0 +1,31 @@
+.footer {
+	background-color: $inverse-background-color;
+	color: $main-color;
+	padding: 60px 0;
+}
+
+.footer__point {
+	margin-bottom: 9px;
+}
+
+.footer-tablet {
+  @media screen and (min-width: $tablet) {
+		display: flex;
+	}
+
+	@media screen and (min-width: $desktop) {
+	  align-items: baseline;
+	}	
+}
+
+.footer--container {
+	text-align: center;
+
+	@media screen and (min-width: $desktop) {
+    display: flex;
+	  align-items: baseline;
+	}		
+
+}
+
+

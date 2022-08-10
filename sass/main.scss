@@ -3,37 +3,39 @@
 @import './base/normalize' ;
 @import './base/base-styles';
 @import './utils/placeholders';
+@import './utils/breakpoints';
 
-@import './components/common/container';
-@import './components/common/logo' ;
-@import './components/common/section';
-@import './components/common/main-button';
-@import './components/common/section-titel';
+@import './mobile/components/common/logo' ;
+@import './mobile/components/common/container' ;
+@import './mobile/components/common/section' ;
+@import './mobile/components/common/main-button' ;
+@import './mobile/components/common/section-titel' ;
 
-@import './components/header/page-nav';
-@import './components/header/header-contacts';
-@import './components/header/page-header';
+@import './mobile/components/header/page-nav' ;
+@import './mobile/components/header/header-contacts' ;
+@import './mobile/components/header/page-header' ;
+@import './mobile/components/header/header-social-link__mobile';
+@import './mobile/components/header/header-contacts--tabl-desk';
 
-@import './components/hero/page-hero';
-@import './components/hero/modal';
-@import './components/hero/main-form';
+@import './mobile/components/hero/page-hero' ;
+@import './mobile/components/hero/modal' ;
+@import './mobile/components/hero/main-form' ;
 
-@import './components/advantages/advantages';
-@import './components/services/services';
+@import './mobile/components/advantages/advantages' ;
 
-@import './components/team/team-cards';
-@import './components/team/team-contacts';
+@import './mobile/components/services/services';
 
-@import './components/clients/clients-icon';
+@import './mobile/components/team/team-cards';
+@import './mobile/components/team/team-contacts';
 
-@import './components/portfolio-page/portfolio-filter';
-@import './components/portfolio-page/portfolio-cards';
+@import './mobile/components/clients/clients-icon';
 
-@import './components/contact-page/contact-page';
+@import './mobile/components/footer/page-footer';
+@import './mobile/components/footer/footer-contacts';
+@import './mobile/components/footer/footer-social-net';
+@import './mobile/components/footer/footer-form';
 
-@import './components/footer/footer-contacts';
-@import './components/footer/footer-social-net';
-@import './components/footer/footer-form';
-@import './components/footer/page-footer';
+@import './mobile/components/portfolio-page/portfolio-filter';
+@import './mobile/components/portfolio-page/portfolio-cards';
 
-
+@import './mobile/components/contact-page/contact-page';
