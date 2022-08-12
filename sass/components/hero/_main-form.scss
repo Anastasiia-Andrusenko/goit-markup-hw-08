@@ -106,6 +106,7 @@
 
 	background-image: url("../images/chek-border.svg");
 	background-size: contain;
+	background-repeat: no-repeat;
 
 	transition: background-image 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
 

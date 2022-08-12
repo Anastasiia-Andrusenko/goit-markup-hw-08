@@ -2,6 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	padding: 93px 15px 94px 15px;
 	z-index: 998;
 
 	width: 100%;
@@ -9,6 +10,7 @@
 
 	background: rgba(0, 0, 0, 0.2);
 	opacity: 1;
+	overflow-y: scroll;
 
 	transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
 }
@@ -27,22 +29,23 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	z-index: 999;
+	width:  calc(100% - 30px);
 	transform: translate(-50%, -50%) scale(1);
-
-	@media screen and (min-width:480px) {
-		width: 450px;
-		height: 609px;
-	}
-	// width: 528px;
-	// height: 581px;
-
+	z-index: 999;
 	background: $main-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
 	transition: transform 250ms $cubic-bezier;
+
+	@media screen and (min-width: $tablet) {
+		width: 450px ;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 558px ;
+	}
 }
 
 .btn-close {

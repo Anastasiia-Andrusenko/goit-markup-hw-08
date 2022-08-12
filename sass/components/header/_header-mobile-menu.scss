@@ -1,0 +1,165 @@
+.mobile-menu-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+	z-index: 900;
+  
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px 48px 40px;
+  transform: translateY(-100%);
+
+  background-color: $main-color;
+  transition: transform 250ms $cubic-bezier ;
+
+   &.is-open {
+    transform: translateY(0);
+   }
+
+}
+
+.menu-btn {
+	margin: 0 0 0 auto;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	transition: fill 250ms $cubic-bezier ;
+
+  &:hover,
+	&:focus {
+		fill: $accent-color;
+	}
+
+	&.is-open .icon-menu{  
+		display: none ;
+	}
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+} 
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	
+  z-index: 990;
+	transition: fill 250ms $cubic-bezier ;
+
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}
+
+.mobile-nav-container {
+  margin-bottom: auto
+}
+
+.mob-nav {
+  @extend %list;
+}
+
+@media screen and (max-width: 767px) {
+	.mob-nav__item {
+		margin-bottom: 32px;
+	}
+}
+
+.mob-nav__item {
+	position: relative;
+}
+
+.mob-nav__link {
+	display: block;
+	margin-bottom: 32px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.18;
+	letter-spacing: 0.02em;
+	color: $text-second-color;
+
+	transition: color 250ms $cubic-bezier;
+
+	&:hover,
+  &:focus {
+	  color: $accent-color;
+  }
+
+}
+
+.current {
+	color: $accent-color;
+}
+
+
+.mob-contacts {
+	@extend %list;
+}
+
+.mob-contacts__link {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: $text-main-color;	
+}
+
+.mob-contacts__item {
+	margin-bottom: 32px;
+
+	&:last-child {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+  
+}
+
+.mob-contacts__phone {
+	font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+	transition: color 250ms $cubic-bezier;
+
+	.mob-contacts__link:hover & {
+		color: $accent-color;
+	}
+
+}
+
+
+.mob-contacts__mail {
+	font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $text-main-color;
+	transition: color 250ms $cubic-bezier;
+
+	.mob-contacts__link:hover & {
+		color: $accent-color;
+	}
+
+}

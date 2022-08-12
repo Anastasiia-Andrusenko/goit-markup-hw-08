@@ -1,0 +1,17 @@
+
+.menu-container {
+  display: none;
+  
+  background-color: $main-color;
+
+   &.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+   }
+}

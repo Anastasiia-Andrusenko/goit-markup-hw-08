@@ -2,9 +2,10 @@
   @extend %list;
   display: flex;
   margin-top: 64px;
-  @media screen and (min-width: 480px){
-      display: none;
-    }
+  
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .header-social-link__item {
@@ -29,4 +30,3 @@
   padding-right: 10px;
   
 }
-
