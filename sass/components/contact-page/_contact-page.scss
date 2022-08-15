@@ -8,7 +8,9 @@
 }
 
 .map {
-  @media screen and (min-width: $mobile) {
+  height: 44vh;
+
+  @media screen and (max-width: 767px) {
 		width: 100%;
 	}
 

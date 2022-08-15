@@ -1494,7 +1494,7 @@ body.modal-open {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  height: 91px;
+  gap: 8px;
   align-content: space-between;
   margin-bottom: 40px;
 }
@@ -1508,13 +1508,6 @@ body.modal-open {
   .filters {
     margin-bottom: 50px;
   }
-}
-
-.filters__item {
-  margin-right: 8px;
-}
-.filters__item:last-child {
-  margin-right: 0;
 }
 
 .filters__button {
@@ -1632,6 +1625,7 @@ body.modal-open {
 }
 
 .map {
+  height: 44vh;
   padding: 8px;
   margin-left: auto;
   margin-right: auto;
@@ -1639,7 +1633,7 @@ body.modal-open {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.14), 1px 4px 1px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .map {
     width: 100%;
   }

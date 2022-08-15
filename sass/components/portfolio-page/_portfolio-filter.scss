@@ -2,7 +2,7 @@
 .filters {
 	display: flex;
 	flex-wrap: wrap;
-	height: 91px;
+	gap: 8px;
 	align-content: space-between;
 	margin-bottom: 40px;
   @extend %list;
@@ -14,14 +14,6 @@
 
 	@media screen and (min-width: $desktop) {
     margin-bottom: 50px;
-	}
-}
-
-.filters__item {
-	margin-right: 8px;
-
-	&:last-child {
-		margin-right: 0;
 	}
 }
 
