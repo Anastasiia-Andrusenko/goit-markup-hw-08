@@ -23,6 +23,20 @@
 	}
 }
 
+.project-label--1st {
+	@media screen and (min-width: $mobile) {
+	  padding-bottom: 20px;
+	}
+
+	@media screen and (min-width: $tablet) {
+	  padding-bottom: 56px;
+	}
+
+	@media screen and (min-width: $desktop) {
+	  padding-bottom: 20px;
+	}
+}
+
 .portfolio-cards__item {
 	width: 100%;
 	transition: box-shadow 250ms $cubic-bezier;

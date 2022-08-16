@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
 	z-index: 900;
+	opacity: 0;
   
   display: flex;
   flex-direction: column;
@@ -12,10 +13,11 @@
   transform: translateY(-100%);
 
   background-color: $main-color;
-  transition: transform 250ms $cubic-bezier ;
+  transition: transform 250ms $cubic-bezier, opacity 250ms $cubic-bezier ;
 
    &.is-open {
     transform: translateY(0);
+		opacity: 1;
    }
 
 }
