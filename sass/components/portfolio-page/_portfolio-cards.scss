@@ -4,13 +4,6 @@
 	
 	gap: 30px;
   @extend %list;
-
-	&__titel {
-		font-size: 18px;
-		line-height: 2;
-		letter-spacing: 0.06em;
-		color: $text-second-color;
-	}
 	
 	&__project-label {
 		padding: 20px 24px;
@@ -55,10 +48,13 @@
 	opacity: 1;
 }
 
-.project-type {
-	font-size: 16px;
-	line-height: 1.88;
-	letter-spacing: 0.03em;
+.portfolio-cards__titel {
+	@include font (700, 18px, 2, 0.06em);
+	color: $text-second-color;
+}
+
+.portfolio-cards__project-type {
+	@include font (400, 16px, 1.88, 0.03em);
 }
 
 .project-thumb {

@@ -101,10 +101,7 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	font-weight: 900;
-	font-size: 26px;
-	line-height: 1.62;
-	letter-spacing: 0.06em;
+	@include font (900, 26px, 1.62, 0.06em);
 	text-transform: uppercase;
 	color: $main-color;
 

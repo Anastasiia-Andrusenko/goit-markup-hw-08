@@ -1,9 +1,11 @@
 .section__titel {
-	margin-bottom: 50px;
-
-	font-size: 36px;
-	line-height: 1.17;
+	margin-bottom: 30px;
 	text-align: center;
-	letter-spacing: 0.03em;
+	@include font (700, 28px, 1.18, 0.03em);
 	color: $text-second-color;
+
+	@media screen and (min-width: $desktop) {
+		margin-bottom: 50px;
+		@include font (700, 36px, 1.17, 0.03em);
+	}
 }
