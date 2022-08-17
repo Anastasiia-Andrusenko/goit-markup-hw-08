@@ -1,7 +1,6 @@
 
 .menu-container {
   display: none;
-  
   background-color: $main-color;
 
    &.is-open {
@@ -13,5 +12,6 @@
    @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+    width: 100%;
    }
 }

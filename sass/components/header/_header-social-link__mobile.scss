@@ -1,6 +1,8 @@
 .header-social-link {
   @extend %list;
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   margin-top: 64px;
   
   @media screen and (min-width: $tablet) {
@@ -10,11 +12,9 @@
 
 .header-social-link__item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    margin-right: 10px;
   
-  &:last-child {
-    margin-right: 0;
-  }
+  
+
 
     &:last-child {
       border-right: none;

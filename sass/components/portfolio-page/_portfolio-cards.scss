@@ -15,6 +15,8 @@
 	&__project-label {
 		padding: 20px 24px;
 		border: 1px solid #eeeeee;
+		border-top: none;
+		flex-grow: 1;
 	}
 
 	@media screen and (min-width: $tablet) {
@@ -23,22 +25,10 @@
 	}
 }
 
-.project-label--1st {
-	@media screen and (min-width: $mobile) {
-	  padding-bottom: 20px;
-	}
-
-	@media screen and (min-width: $tablet) {
-	  padding-bottom: 56px;
-	}
-
-	@media screen and (min-width: $desktop) {
-	  padding-bottom: 20px;
-	}
-}
-
 .portfolio-cards__item {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 	transition: box-shadow 250ms $cubic-bezier;
 	cursor: pointer;
 

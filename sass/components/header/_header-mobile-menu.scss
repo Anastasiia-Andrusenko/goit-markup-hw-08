@@ -20,6 +20,10 @@
 		opacity: 1;
    }
 
+	 @media screen and (min-width: $tablet) {
+    display: none;
+		opacity: 0;
+  }
 }
 
 .menu-btn {
@@ -40,6 +44,7 @@
 
   @media screen and (min-width: $tablet) {
     display: none;
+		opacity: 0;
   }
 } 
 
